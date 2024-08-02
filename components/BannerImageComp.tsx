@@ -4,7 +4,7 @@ import Image from "next/image";
 import { FiEdit } from "react-icons/fi";
 
 function BannerImageComp({ad,setShow} : {ad : item,setShow : (newshow : number)=>void}) {
-  console.log(" ad : ",ad);
+
   return (
     <div className={`basis-[98%] xl:basis-[48%] h-1/2  flex relative ${ad.color ? ad.color : "text-black"}`} style={{background : `url('${ad.img}')`}}>
 

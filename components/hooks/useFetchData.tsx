@@ -17,7 +17,6 @@ function useFetchData() {
                 const obj : dataInterface = JSON.parse( localStorage.getItem('data') || "" );
                return setData(obj)
             }
-            console.log("fetch");
             const response = await fetch('data.json');
             const result = await response.json();
             localStorage.setItem("data",JSON.stringify(result.data));
