@@ -54,6 +54,7 @@ function EditBannerTemplateBs({show,setShow,setImgUrl,imgUrl} : EditBannerTempla
     localStorage.setItem("data",JSON.stringify(newData));
 
     setShow(-1);
+    setImgUrl("");
 
   }
   
